@@ -9,10 +9,9 @@ import router from './router'
 import { Header } from 'mint-ui';
 Vue.component(Header.name, Header);
 import 'mint-ui/lib/style.css'
-import "./lib/mui/css/mui.min.css"
+import "./lib/mui/css/mui.min.css" 
 
 Vue.config.productionTip = false
-
 
 /* eslint-disable no-new */
 new Vue({
