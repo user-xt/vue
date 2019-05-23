@@ -1,17 +1,16 @@
 <template>
   <div>
-      <Header></Header>
       <Banner></Banner>
       <ListIcon></ListIcon>
       
-      <Tabbar></Tabbar>
+      <!-- <Tabbar></Tabbar> -->
+      <h1>app</h1>
+
   </div>
 </template>
 
 <script>
-    import Header from './../hader.vue'
-    import Tabbar from './../tabbar.vue'
-    import Banner from './../banner.vue'
+    import Banner from './../banner.vue'  
     import ListIcon from './../listIcon.vue'
 export default {
   data() {
@@ -23,8 +22,6 @@ export default {
 
   },
   components: {
-      Header,
-      Tabbar,
       Banner,
       ListIcon
 

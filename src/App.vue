@@ -56,6 +56,6 @@
 
   .v-enter-active,
   .v-leave-active {
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
   }
 </style>
