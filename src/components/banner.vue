@@ -57,17 +57,15 @@
     }
 </script>
 
-
 <style lang="less" scoped>
     /* @import 'swiper/dist/css/swiper.css' */
     .swiper {
         height: 200px;
 
-
     }
 
-    .swiper-list {
-        &:nth-child(1) {
+    /* .swiper-list { */
+        /* &:nth-child(1) {
             background-color: red;
         }
 
@@ -77,14 +75,16 @@
 
         &:nth-child(3) {
             background-color: green;
-        }
+        } */
 
-        img {
+        
+    /* } */
+
+    .swiper-list img {
             width: 100%;
             height: 100%;
             margin: 0 auto;
             display: block;
             font-size: 0;
         }
-    }
 </style>
