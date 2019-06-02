@@ -29,7 +29,7 @@
         },
         methods: {
             getLunbotu() {//获取轮播图数据
-                this.$http.get("https://api.apiopen.top/videoCategory").then(res => {
+                this.$http.get("videoCategory").then(res => {
                     console.log(res.body);
                     // console.log(res.status)
                     if (res.status === 200) {
@@ -65,7 +65,7 @@
     }
 
     /* .swiper-list { */
-        /* &:nth-child(1) {
+    /* &:nth-child(1) {
             background-color: red;
         }
 
@@ -77,14 +77,14 @@
             background-color: green;
         } */
 
-        
+
     /* } */
 
     .swiper-list img {
-            width: 100%;
-            height: 100%;
-            margin: 0 auto;
-            display: block;
-            font-size: 0;
-        }
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: block;
+        font-size: 0;
+    }
 </style>

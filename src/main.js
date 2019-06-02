@@ -20,6 +20,14 @@ import 'swiper/dist/css/swiper.css'
 Vue.use(VueAwesomeSwiper)
 
 
+import axios from 'axios'
+
+Vue.prototype.$axios = axios;
+
+
+
+
+
 // 导入vue-axios
 // import VueAxios from 'axios'
 // 安装VueAxios
@@ -31,7 +39,16 @@ import VueResource from 'vue-resource'
 
 Vue.use(VueResource)
 
+Vue.http.options.root = "https://api.apiopen.top";
 
+
+// cnpm install moment -s   格式化时间
+
+import moment from 'moment'
+
+Vue.filter("dataFormat", function (dataStr, pattern = "YYYY-MM-DD HH:mm:ss") {
+  return moment(dataStr).format(pattern);
+})
 
 Vue.config.productionTip = false
 

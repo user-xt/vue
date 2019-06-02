@@ -12,6 +12,7 @@
 
     <!-- 底部 Tabbar区域 -->
 
+
     <Tabbar></Tabbar>
 
 
@@ -36,9 +37,10 @@
 <style lang="less" scoped>
   .app-container {
     padding-top: 40px;
+    padding-bottom: 50px;
     overflow-x: hidden;
     /* position: relative; */
-    
+
 
   }
 
@@ -46,7 +48,7 @@
     opacity: 0;
     transform: translateX(100%);
   }
- 
+
   .v-leave-to {
     opacity: 0;
     transform: translateX(-100%);

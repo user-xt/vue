@@ -1,35 +1,41 @@
 <template>
   <div>
-      <Banner></Banner>
-      <ListIcon></ListIcon>
-      
-      <!-- <Tabbar></Tabbar> -->
-      <h1>app</h1>
-      <h3>asdfsagag</h3>
-
+    
+    <Banner></Banner>
+    <ListIcon></ListIcon>
   </div>
 </template>
 
 <script>
-    import Banner from './../banner.vue'   
-    import ListIcon from './../listIcon.vue'
-export default {
-  data() {
-    return {
+  import Banner from './../banner.vue'
+  import ListIcon from './../listIcon.vue'
+  export default {
+    data() {
+      return {
 
-    }
-  },
-  methods: {
+      }
+    },
+    methods: {
+      // this不是指代vue实例 需要保存this指向
+      getDada() {
+        this.$axios.get("videoCategory", {
+          params: {
+            "name": "zhangsan"
+          }
+        }).then(function (params) {
+          console.log(params);
+        })
+      }
 
-  },
-  components: {
+    },
+    components: {
       Banner,
       ListIcon
 
+    }
   }
-}
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 
 </style>
